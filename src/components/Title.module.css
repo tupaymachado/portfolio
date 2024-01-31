@@ -1,0 +1,13 @@
+.title {
+    padding: 1rem;
+    color: var(--white-100);
+}
+
+.name {
+    color: #5967b5;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.75em;
+}
