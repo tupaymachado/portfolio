@@ -8,6 +8,10 @@
     color: var(--gray-100);
 }
 
+h1, h2, h3 {
+    color: var(--white-100);
+}
+
 * {
     margin: 0;
     padding: 0;
