@@ -4,7 +4,7 @@ import { useState } from 'react';
 function Intro() {
     return (
         <>
-            <p>
+            <p className={styles.intro}>
                 Claro, aqui está uma versão mais curta e energizada da sua descrição pessoal:
 
                 Olá, Mundo Tech!
