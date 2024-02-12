@@ -1,11 +1,13 @@
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 40px;
+    height: 60px;
     position: sticky;
     top: 0;
     z-index: 999;
     background-color: red;
-    width: 100vw;
+}
+
+.menuList {
+    display: flex;
+    justify-content: space-around;
+    align-content:flex-end;
 }
