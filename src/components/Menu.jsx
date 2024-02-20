@@ -6,7 +6,13 @@ function Menu() {
 
     return (
         <>
-            <button onClick={() => setShowMenu(!showMenu)}></button>
+            <div className={styles.navBar}>
+                <label className={`${styles.buttonsBurger} ${showMenu ? styles.menuActive : ''}`} htmlFor="burger" onClick={() => setShowMenu(!showMenu)}>
+                    <div className={styles.burgerLine}></div>
+                    <div className={styles.burgerLine}></div>
+                    <div className={styles.burgerLine}></div>
+                </label>
+            </div>
             <nav className={`${styles.menu} ${showMenu ? styles.show : styles.hide}`}>
                 <ul className={`${styles.menuList}`}>
                     <li><a href="#intro">Tupay</a></li>

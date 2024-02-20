@@ -1,31 +1,64 @@
+.navBar {
+    height: 3.5rem;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
 .menu {
     height: 60px;
     position: sticky;
     top: 0;
     z-index: 2;
-    background-color: red;
+    background-color: rgb(34, 0, 255);
 }
 
-.menuList {
+.buttonsBurger {
     display: flex;
-    justify-content: space-around;
-    align-content:flex-end;
+    flex-direction: column;
+    margin-left: 10px;
 }
 
-button {
-    height: 25px;
-    width: 25px;
-    background-color: blue;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
+.buttonsBurger input {
+    display: none;
     cursor: pointer;
 }
 
+.buttonsBurger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.buttonsBurger div:last-child {
+    margin-bottom: 0px;
+}
+
 .show {
-    display: block; 
+    display: block;
 }
 
 .hide {
     display: none;
 }
+
+/* Adicione isso ao seu arquivo Menu.module.css */
+.burgerLine {
+    transition: all 0.3s ease;
+  }
+  
+  .menuActive .burgerLine:first-child {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .menuActive .burgerLine:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menuActive .burgerLine:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
