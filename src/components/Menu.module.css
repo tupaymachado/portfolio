@@ -8,17 +8,25 @@
 }
 
 .menu {
-    height: 60px;
-    position: sticky;
-    top: 0;
+    height:min-content;
+    width: 50%;
+    position: absolute;
+    top: 3.5rem;
     z-index: 2;
     background-color: rgb(34, 0, 255);
+}
+
+.menu li {
+    list-style: none;
+    padding: 0.5rem 0;
+    z-index: 3
 }
 
 .buttonsBurger {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+    z-index: 4;
 }
 
 .buttonsBurger input {
@@ -37,28 +45,31 @@
     margin-bottom: 0px;
 }
 
+.burgerLine {
+    transition: all 0.3s ease;
+}
+
+.menuActive .burgerLine:first-child {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menuActive .burgerLine:nth-child(2) {
+    opacity: 0;
+}
+
+.menuActive .burgerLine:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
 .show {
     display: block;
+    touch-action: none;
+}
+
+.disable-scroll {
+    overflow: hidden;
 }
 
 .hide {
     display: none;
 }
-
-/* Adicione isso ao seu arquivo Menu.module.css */
-.burgerLine {
-    transition: all 0.3s ease;
-  }
-  
-  .menuActive .burgerLine:first-child {
-    transform: translateY(8px) rotate(45deg);
-  }
-  
-  .menuActive .burgerLine:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .menuActive .burgerLine:last-child {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  
