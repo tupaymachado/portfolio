@@ -1,32 +1,41 @@
 .navBar {
     height: 3.5rem;
-    background-color: red;
-    display: flex;
-    align-items: center;
+    background-color: rgba(251, 17, 17, 0.97);
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .menu {
-    height:min-content;
-    width: 50%;
+    height:100%;
+    width: 0;
+    padding-top: 4.5rem;
     position: absolute;
-    top: 3.5rem;
+    top: 0;
     z-index: 2;
-    background-color: rgb(34, 0, 255);
+    background-color: rgba(29, 29, 29, 0.97);
+    color: var(--white-100);
+
+    transition: all 0.3s ease;
 }
 
 .menu li {
     list-style: none;
     padding: 0.5rem 0;
-    z-index: 3
+}
+
+.menuList {
+    background-color: inherit;
 }
 
 .buttonsBurger {
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-    z-index: 4;
+    z-index: 3;
+    position: sticky;
+    top: 1.75rem;
+    left: 10px;
+    transform: translateY(-50%);
 }
 
 .buttonsBurger input {
@@ -62,14 +71,9 @@
 }
 
 .show {
-    display: block;
-    touch-action: none;
+    width: 50%;
 }
 
 .disable-scroll {
     overflow: hidden;
-}
-
-.hide {
-    display: none;
 }
