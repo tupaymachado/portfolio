@@ -79,3 +79,15 @@
 .disable-scroll {
     overflow: hidden;
 }
+
+.languageButton {
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+    z-index: 3;
+
+    width: 2rem;
+    height: 2rem;
+
+    border-radius: 5px;
+}

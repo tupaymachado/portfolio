@@ -2,7 +2,7 @@ import "@fontsource/dm-mono";
 import "@fontsource/dm-mono/500.css";
 import styles from './Title.module.css';
 
-function Title() {
+function Title({ language, setLanguage }) {
     return (
         <>
             <h1 className={styles.title}>Hello, World!<br/> I'm <span className={styles.name}>Tupay</span>.</h1>

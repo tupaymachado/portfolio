@@ -9,12 +9,31 @@ import Blog from './components/Blog.jsx' */
 import './App.css'
 
 function App() {
+  const [language, setLanguage] = useState('teste');
+
+  function switchLanguage() {
+    if (language === 'pt-br') {
+      setLanguage('en-us');
+    } else {
+      setLanguage('pt-br');
+    }
+  }
+
   return (
     <>
-      <Menu />
-      <Title />
-      <Intro />
-      <Projects />{/*
+      <Menu 
+        language={language}
+        switchLanguage={switchLanguage}
+      />
+      <Title 
+        language={language}
+      />
+      <Intro 
+        language={language}
+      />
+      <Projects 
+        language={language}
+      />{/*
       <Contact />
       <Blog /> */}
     </>
