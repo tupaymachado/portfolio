@@ -9,7 +9,7 @@ import Blog from './components/Blog.jsx' */
 import './App.css'
 
 function App() {
-  const [language, setLanguage] = useState('teste');
+  const [language, setLanguage] = useState('pt-br');
 
   function switchLanguage() {
     if (language === 'pt-br') {

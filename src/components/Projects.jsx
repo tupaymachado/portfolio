@@ -2,7 +2,7 @@ import styles from './Projects.module.css';
 import etiquetas from '../assets/etiquetas.jpg';
 
 let content = {
-    etiquetas: {
+    cards: {
         'pt-br': {
             img: etiquetas,
             imgDesc: 'Gerenciador de showroom',
@@ -21,6 +21,16 @@ let content = {
             github: 'https://github.com/tupaymachado/portfolioElev',
             link: 'https://portfolioelevato.web.app/'
         }
+    },
+    section: {
+        'pt-br': {
+            title: 'Projetos',
+            paragraph: 'Aqui estão alguns dos projetos em que tenho trabalhado:'
+        },
+        'en-us': {
+            title: 'Projects',
+            paragraph: 'Here are some of the projects I\'ve been working on:'
+        }   
     }
 }
 
@@ -30,7 +40,7 @@ function Card({ img, imgDesc, title, description, stack, github, link }) {
             <img src={img} alt={imgDesc} className={styles.cardImage} />
             <h3 className={styles.cardTitle}>{title}</h3>
             <p className={styles.cardDescription}>{description}</p>
-            <ul className={styles.cardStack}> {/*ajustar de modo que crie uma lista com os itens do array stack*/}
+            <ul className={styles.cardStack}>
                 <ul className={styles.cardStack}></ul>
                     {stack.map((item) => (
                         <li key={item}>{item}</li>
@@ -51,13 +61,13 @@ function Projects() {
             <p className={styles.projectsParagraph}>Here are some of the projects I've been working on:</p>
 
             <Card 
-                img={content.etiquetas['pt-br'].img}
-                imgDesc={content.etiquetas['pt-br'].imgDesc}
-                title={content.etiquetas['pt-br'].title}
-                description={content.etiquetas['pt-br'].description}
-                stack={content.etiquetas['pt-br'].stack}
-                github={content.etiquetas['pt-br'].github}
-                link={content.etiquetas['pt-br'].link}
+                img={content.cards['pt-br'].img}
+                imgDesc={content.cards['pt-br'].imgDesc}
+                title={content.cards['pt-br'].title}
+                description={content.cards['pt-br'].description}
+                stack={content.cards['pt-br'].stack}
+                github={content.cards['pt-br'].github}
+                link={content.cards['pt-br'].link}
             />
         </div>
     );
