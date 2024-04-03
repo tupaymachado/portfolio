@@ -2,12 +2,41 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 2rem;
     padding: 1rem;
 }
 
 .projectsTitle {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem auto;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
+
+    background-color: red;
+}
+
+.cardImage {
+    border-radius: 0.5rem;
+}
+
+.cardStack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardStack li {
+    margin: 0.5rem;
+}
+
+.cardDescription {
+    text-align: center;
 }
