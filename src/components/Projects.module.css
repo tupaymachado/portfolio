@@ -1,26 +1,25 @@
 .projectsContainer {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     flex-wrap: wrap;
+    gap: 0.5rem;
     justify-content: space-between;
-    padding: 1rem;
 }
 
-.projectsTitle {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0.5rem auto;
-}
+/* .projectsTitle {
+    margin: 0 auto;
+} */
 
 .cardContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1rem;
-    padding: 1rem;
     width: 100%;
 
-    background-color: red;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);    
 }
 
 .cardImage {

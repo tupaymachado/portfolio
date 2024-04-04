@@ -42,6 +42,7 @@ function Card({ img, imgDesc, title, description, stack, github, link }) {
                     <li key={item}>{item}</li>
                 ))}
             </ul>
+            
             <div className={styles.cardLinks}>
                 <a href={github} className={styles.cardLink}>Github Icon</a>
                 <a href={link} className={styles.cardLink}>Link to Project</a>
