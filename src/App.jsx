@@ -29,7 +29,7 @@ function App() {
   }
 
   return (
-    <>
+    <div className="mainContainer">
       <Menu 
         language={language}
         switchLanguage={switchLanguage}
@@ -45,7 +45,7 @@ function App() {
       />{/*
       <Contact />
       <Blog /> */}
-    </>
+    </div>
   )
 }
 

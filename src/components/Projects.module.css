@@ -5,6 +5,8 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     justify-content: space-between;
+
+    margin: 0 1rem;
 }
 
 /* .projectsTitle {

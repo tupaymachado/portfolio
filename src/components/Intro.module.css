@@ -1,5 +1,18 @@
+.introContainer {
+    
+    margin: 0 1rem;
+}
+
 .intro {
     max-width: 600px;
-    text-align:left;/* 
-    padding: 0.5rem 1rem; */
+    text-align:left;
+}
+
+.introImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

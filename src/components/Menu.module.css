@@ -4,8 +4,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0;
-    z-index: 1;/* 
-    margin-bottom: 3rem; */
+    z-index: 1;
 }
 
 .menu {
