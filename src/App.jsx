@@ -12,9 +12,10 @@ import "@fontsource/poppins/900.css"
 import Menu from './components/Menu.jsx'
 import Title from './components/Title.jsx'
 import Intro from './components/Intro.jsx'
-import Projects from './components/Projects.jsx'/*
+import Projects from './components/Projects.jsx'
+import Skills from './components/Skills.jsx' /*
 import Contact from './components/Contact.jsx'
-import Blog from './components/Blog.jsx' */
+import Footer from ./components/Footer.jsx */
 import './App.css'
 
 function App() {
@@ -56,9 +57,15 @@ function App() {
       <Projects 
         language={language}
         color={color}
-      />{/*
+      />
+      <Skills 
+      language={language}
+      color={color}
+      />
+      {/*
       <Contact />
-      <Blog /> */}
+      <Footer />
+       */}
     </div>
   )
 }
