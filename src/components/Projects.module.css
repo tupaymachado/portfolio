@@ -17,11 +17,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     gap: 0.5rem;
     width: 100%;
+    padding: 0.5rem;
 
     border-radius: 0.5rem;
-    box-shadow: var(--shadow);    
+    box-shadow: var(--shadow);  
+    
+    transition: transform 0.2s linear;  
+}
+
+.cardContainer:hover {
+    transform: translateY(-0.4rem);    
 }
 
 .cardImage {
@@ -40,4 +48,20 @@
 
 .cardDescription {
     text-align: center;
+}
+
+.cardIcons {
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem;
+}
+
+.svg {
+    width: 1.5rem;
+    height: auto;
+    transition: fill 0.3s;
+}
+
+.svg:hover {
+    stroke: #7aa3bb;
 }

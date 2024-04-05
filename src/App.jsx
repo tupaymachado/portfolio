@@ -19,6 +19,15 @@ import './App.css'
 
 function App() {
   const [language, setLanguage] = useState('pt-br');
+  const [color, setColor] = useState('dark');
+
+  function switchColor() {
+    if (color === 'dark') {
+      setColor('light');
+    } else {
+      setColor('dark');
+    }
+  };
 
   function switchLanguage() {
     if (language === 'pt-br') {
@@ -26,22 +35,27 @@ function App() {
     } else {
       setLanguage('pt-br');
     }
-  }
+  };
 
   return (
     <div className="mainContainer">
       <Menu 
         language={language}
         switchLanguage={switchLanguage}
+        color={color}
+        switchColor={switchColor}
       />
       <Title 
         language={language}
+        color={color}
       />
       <Intro 
         language={language}
+        color={color}
       />
       <Projects 
         language={language}
+        color={color}
       />{/*
       <Contact />
       <Blog /> */}

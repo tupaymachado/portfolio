@@ -1,0 +1,10 @@
+.svg {
+    width: 1.5rem;
+    height: auto;
+    fill: currentColor;
+    transition: fill 0.3s;
+}
+
+.svg:hover {
+    fill: #7aa3bb;
+}

@@ -1,5 +1,6 @@
 import styles from './Projects.module.css';
 import etiquetas from '../assets/etiquetas.jpg';
+import Github from './GithubIcon';
 
 let content = {
     cards: {
@@ -31,6 +32,22 @@ let content = {
     }
 }
 
+function ProjectIcon({ link, color }) {
+    return (
+        <a href={link} target='_blank' rel='noreferrer noopener'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke={color} stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className={styles.svg}>
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </g>
+            </svg>
+        </a>
+    )
+}
+
 function Card({ img, imgDesc, title, description, stack, github, link }) {
     return (
         <div className={styles.cardContainer}>
@@ -42,10 +59,10 @@ function Card({ img, imgDesc, title, description, stack, github, link }) {
                     <li key={item}>{item}</li>
                 ))}
             </ul>
-            
-            <div className={styles.cardLinks}>
-                <a href={github} className={styles.cardLink}>Github Icon</a>
-                <a href={link} className={styles.cardLink}>Link to Project</a>
+
+            <div className={styles.cardIcons}>
+                <Github color='#E0FBFC' link={github} />
+                <ProjectIcon color='#E0FBFC' link={link} />
             </div>
         </div>
     );
