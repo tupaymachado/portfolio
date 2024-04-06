@@ -9,13 +9,13 @@ let content = {
     'pt-br': {
         title: 'Habilidades',
         skills: {
-            others: ['Inglês Avançado', 'Graduação em Administração Completa', 'Graduação em Análise e Desenvolvimento de Sistemas em Andamento']
+            others: ['Inglês Avançado', 'Graduação em Análise e Desenvolvimento de Sistemas (em andamento)', 'Graduação em Administração (completa)']
         }
     },
     'en-us': {
         title: 'Skills',
         skills: {
-            others: ['Advanced English', 'Bachelor\'s Degree in Business Administration', 'Bachelor\'s Degree in Systems Analysis and Development in Progress']
+            others: ['Advanced English', 'Bachelor\'s Degree in Systems Analysis and Development (in progress)', 'Bachelor\'s Degree in Business Administration (finished)']
         }
     }
 }

@@ -13,9 +13,9 @@ import Menu from './components/Menu.jsx'
 import Title from './components/Title.jsx'
 import Intro from './components/Intro.jsx'
 import Projects from './components/Projects.jsx'
-import Skills from './components/Skills.jsx' /*
-import Contact from './components/Contact.jsx'
-import Footer from ./components/Footer.jsx */
+import Skills from './components/Skills.jsx' 
+import Footer from './components/Footer.jsx'
+/*import Contact from './components/Contact.jsx' */
 import './App.css'
 
 function App() {
@@ -62,9 +62,12 @@ function App() {
       language={language}
       color={color}
       />
+      <Footer 
+      language={language}
+      color={color}
+      />
       {/*
       <Contact />
-      <Footer />
        */}
     </div>
   )
