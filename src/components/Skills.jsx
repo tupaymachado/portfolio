@@ -26,7 +26,7 @@ function getLanguage(language) {
 
 function Skills({ language }) {
     return (
-        <div className={styles.skillsContainer}>
+        <div className={styles.skillsContainer} id='skills'>
             <h2 className={styles.skillsTitle}>{content[getLanguage(language)].title}</h2>
             <div className={styles.skillsContent}>
                 <ul>

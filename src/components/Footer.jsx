@@ -2,9 +2,15 @@ import styles from './Footer.module.css';
 
 let content = {
     'pt-br': {
-        title: 'Contato',
-        email: 'tupay.machado@gmail.com'
-    }
+        title: 'Entre em contato',
+        button: 'Me envie um email',
+    },
+    'en-us': {
+        title: 'Get in touch',
+        button: 'Email me',
+    },
+    email: 'tupay.machado@gmail.com'
+
 };
 
 function getLanguage(language) {
@@ -13,9 +19,11 @@ function getLanguage(language) {
 
 function Footer({ language }) {
     return (
-        <footer className={styles.footerContainer}>
-            <h2 className={styles.footerTitle}>{content[getLanguage(language)].title}</h2>
-            <p className={styles.footerContent}>{content[getLanguage(language)].email}</p>
+        <footer className={styles.footerContainer} id='contact'>
+            <h2>{content[getLanguage(language)].title}</h2>
+            <button>{content[getLanguage(language)].button}</button>
         </footer>
     );
 }
+
+export default Footer;

@@ -17,7 +17,7 @@ let content = {
                 title: 'Showroom Manager',
                 description: 'Web application for showroom management. Allows search, register and print product labels from a showroom.',
             },
-            stack: ['React', 'Firebase Firestore', 'CSS3', 'Firebase Auth'],
+            stack: ['React', 'Firebase Firestore', 'CSS3', 'Firebase Auth', 'Firebase Auth', 'Firebase Realtime DB'],
             github: 'https://github.com/tupaymachado/portfolioElev',
             link: 'https://portfolioelevato.web.app/'
         },

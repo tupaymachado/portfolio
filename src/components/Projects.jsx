@@ -44,7 +44,7 @@ function getLanguage(language) {
 
 function Projects( { language }) {
     return (
-        <div className={styles.projectsContainer}>
+        <div className={styles.projectsContainer} id='projects'>
             <h2 className={styles.projectsTitle}>{content.section[getLanguage(language)].title}</h2>
             <p className={styles.projectsParagraph}>{content.section[getLanguage(language)].paragraph}</p>
 
