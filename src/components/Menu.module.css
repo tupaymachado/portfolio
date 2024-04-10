@@ -4,7 +4,17 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navBarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700px;
+    max-width: 1200px;
+    padding: 0 1rem;
 }
 
 .menu {
@@ -13,6 +23,7 @@
     padding-top: 4.5rem;
     position: absolute;
     top: 0;
+    left: 0;
     z-index: 2;
     background-color: rgba(29, 29, 29, 0.97);
     color: var(--text-dark);
@@ -33,14 +44,8 @@
 .buttonsBurger {
     display: flex;
     flex-direction: column;
-    z-index: 3;
-    position: sticky;
-    top: 1.75rem;
-    left: 10px;
-    margin-left: 1rem;
-    transform: translateY(-50%);
-    width: fit-content;
     cursor: pointer;
+    z-index: 5;
 }
 
 .buttonsBurger input {
@@ -84,13 +89,8 @@
 }
 
 .languageButton {
-    z-index: 3;
-    transform: translateY(-50%);
-    position: absolute;
-    right: 1rem;
-    top: 1.75rem;
     background-size: 200% 100%;
-    width: fit-content;
+    min-width: max-content;
     background-image: linear-gradient(to right, var(--text-dark) 50%, var(--titles-dark) 50%);
     color: var(--bg-dark);
     padding: 0.5rem 1rem;
@@ -100,8 +100,6 @@
     transition: background-position 0.3s;
 
     font-family: "Poppins", sans-serif;
-
-    margin-bottom: 5rem;
 }
 
 .languageButton:hover {
@@ -112,12 +110,6 @@
 @media screen and (min-width: 600px) {
     .buttonsBurger {
         display: none;
-    }
-
-    .navBar {
-        width: 100%;
-        max-width: 700px;
-        margin: 0 auto;
     }
 
     .navbarContainer {
