@@ -18,18 +18,20 @@ function Linkedin({ color }) {
 
 function Intro({ language, color }) {
     let content = {
-        'pt-br': {
-            intro: "Olá, eu sou o Tupay! Desenvolvedor de Software e entusiasta de tecnologia. Seja bem-vindo ao meu site!",
-        },
-        'en-us': {
-            intro: "Hello, I'm Tupay! Software Developer and technology enthusiast. Welcome to my website!",
-        }
+        'pt-br': ["Sou um entusiasta da tecnologia e uma das minhas paixões é conseguir resolver problemas práticos através de soluções simples, criativas e eficientes.",
+        "Atualmente curso Análise e Desenvolvimento de Sistemas no Senac/RS, em Pelotas. Lá tive oportunidade de participar de iniciativas fantásticas, como os Hackathons, onde minha equipe conseguiu conquistar o terceiro lugar apesar de ainda sermos todos do primeiro semestre.",
+        "Além dos estudos, tenho me dedicado a projetos práticos em meu atual local de trabalho. Apesar de ainda não trabalhar na área, pude desenvolver alguns projetos que foram implementados em larga escala na empresa e que obtiveram resultados muito positivos."
+            
+    ],
+        'en-us': ["I'm a technology enthusiast and one of my passions is to solve practical problems through simple, creative and efficient solutions.",
+        "I'm currently studying Systems Analysis and Development at Senac/RS, in Pelotas. There I had the opportunity to participate in fantastic initiatives, such as Hackathons, where my team managed to win third place despite still being in the first semester.",
+        "In addition to my studies, I have dedicated myself to practical projects in my current workplace. Although I don't work in the area yet, I was able to develop some projects that were implemented on a large scale in the company and that obtained very positive results."]
     };
 
     return (
         <div className={styles.introContainer}>
             <p className={styles.intro}>
-                {language === 'pt-br' ? content['pt-br'].intro : content['en-us'].intro}
+                {content[language].map((paragraph, index) => <span key={index}>{paragraph}<br /><br /></span>)}
             </p>
             <div className={styles.introImgContainer}>
                 <Linkedin

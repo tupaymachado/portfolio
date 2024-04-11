@@ -21,7 +21,9 @@ function Footer({ language }) {
     return (
         <footer className={styles.footerContainer} id='contact'>
             <h2>{content[getLanguage(language)].title}</h2>
-            <button>{content[getLanguage(language)].button}</button>
+            <button>
+                <a href={`mailto:${content.email}`} className={styles.footerButton}>{content[getLanguage(language)].button}</a>
+            </button>
         </footer>
     );
 }
